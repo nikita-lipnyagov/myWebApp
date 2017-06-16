@@ -6,7 +6,7 @@ import org.itstep.mywebapp.repository.UserRepository;
 
 import java.util.List;
 
-public class UserServiceImpl implements UserService {
+public class UserServiceImpl implements Service {
 
     private UserRepository repository = new MockUserRepository();
 

@@ -1,7 +1,7 @@
 package org.itstep.mywebapp.web;
 
 import org.itstep.mywebapp.model.User;
-import org.itstep.mywebapp.service.UserService;
+import org.itstep.mywebapp.service.Service;
 import org.itstep.mywebapp.service.UserServiceImpl;
 
 import javax.servlet.ServletException;
@@ -15,7 +15,7 @@ import java.util.List;
 @WebServlet("/users")
 public class UserServlet extends HttpServlet {
 
-    private UserService service = new UserServiceImpl();
+    private Service service = new UserServiceImpl();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
